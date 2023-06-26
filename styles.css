@@ -1,0 +1,185 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaeaea;
+  color: #333;
+}
+
+a {
+  color: #1573e6;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.title {
+  text-align: left;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.title::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 3px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.typing-animation {
+  animation: typing 4s steps(40) 1s 1 normal both;
+}
+
+section {
+  padding: 40px;
+  border-top: 2px solid #333;
+}
+
+section:first-of-type {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 175px; /* Adjust the width as needed */
+  height: 175px; /* Adjust the height as needed */
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 50px; /* Adjust the margin as needed */
+  border: 2px solid #333;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-icons {
+  margin-top: 30px; 
+  text-align: center;
+}
+
+.profile-icons a {
+  color: #333;
+  font-size: 32px;
+  margin-right: 15px;
+}
+
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h2 {
+  text-align: left;
+}
+
+.text-content p {
+  text-align: left;
+}
+
+.header-icon {
+  width: 54px;
+  height: 54px;
+  margin-left: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.publication-list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.publication-item {
+  /* padding: 2px; */
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 2px solid #333;
+}
+
+.publication-link {
+  text-decoration: none;
+  color: #1573e6;
+  transition: color 0.3s ease;
+}
+
+.publication-link:hover {
+  color: #0056b3;
+}
+
+
+
+
+
+
