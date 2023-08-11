@@ -178,6 +178,47 @@ header {
   color: #0056b3;
 }
 
+.project-list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.project-item {
+  /* padding: 2px; */
+  margin-bottom: 20px;
+  padding-left: 10px;
+  /* border-left: 2px solid #333; */
+}
+
+.project-link {
+  text-decoration: none;
+  color: #1573e6;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #0056b3;
+}
+
+.project-title {
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: normal;
+}
+
+.project-subtitle {
+  font-size: 15px;
+  color: #888;
+  margin-left: 2px; /* Add an indent */
+  margin-top: -15px; /* Adjust the top margin as needed */
+}
+
+
+
+
+
+
+
 
 
 

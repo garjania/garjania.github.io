@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<title>SwissGL demos</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="proj/style.css">
+
+<script src='swissgl.js'></script>
+
+<script src='proj/Haze.js'></script>
+<script src='proj/main.js'></script>
+
+<div id="demo">
+  <canvas id="c" width="1280" height="12"></canvas>
+</div>
+
+<script>
+    'use strict';
+    const app = new DemoApp([
+        Haze
+    ]);
+    function fullscreen() {
+        app.fullscreen();
+    }
+</script>

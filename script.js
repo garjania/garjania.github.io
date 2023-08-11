@@ -24,3 +24,15 @@ window.addEventListener('load', () => {
   titleElement.classList.add('typing');
   type();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownBtns = document.querySelectorAll(".dropdown-btn");
+
+  dropdownBtns.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const dropdown = btn.parentElement;
+      dropdown.classList.toggle("active");
+    });
+  });
+});
+
