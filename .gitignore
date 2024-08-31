@@ -1,1 +1,3 @@
 static/_*
+.DS_Store
+.vscode
