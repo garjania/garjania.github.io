@@ -9,7 +9,7 @@ body {
 }
 
 a {
-  color: #1573e6;
+  color: #007BFF;
   text-decoration: none;
 }
 
@@ -20,7 +20,7 @@ a:hover {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 10px;
 }
@@ -162,10 +162,50 @@ header {
 }
 
 .publication-item {
-  /* padding: 2px; */
   margin-bottom: 20px;
   padding-left: 10px;
   border-left: 2px solid #333;
+}
+
+.publication-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.publication-thumbnail {
+  flex: 0 0 280px; /* Fixed width for thumbnail */
+  margin-right: 15px; /* Space between thumbnail and publication details */
+  background-color: whitesmoke; /* Placeholder background color */
+  border-radius: 5px; /* Rounded corners for the placeholder */
+  border: 1px solid #333; /* Add a border around the placeholder */
+  padding: 1px; /* Space between the image and the placeholder's edges */
+  box-sizing: border-box; /* Ensure padding doesn't increase total size */
+}
+
+.publication-thumbnail img {
+  width: 100%; /* Image fills the placeholder */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.publication-details {
+  flex: 1; /* Take remaining space */
+}
+
+.publication-title {
+  font-size: 1em;
+  margin: 0;
+}
+
+.publication-authors {
+  font-size: 0.9em;
+}
+
+.publication-conference {
+  font-size: 0.9em;
+}
+
+.publication-info {
+  margin-top: 10px;
 }
 
 .publication-link {
@@ -211,6 +251,68 @@ header {
   color: #888;
   margin-left: 2px; /* Add an indent */
   margin-top: -15px; /* Adjust the top margin as needed */
+}
+
+.repo-info-container {
+  background-color: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+}
+.repo-info-container h3 {
+  font-size: 26px;
+  margin: 0;
+  font-style: normal;
+  /* color: #0366d6; */
+}
+.repo-info-container p {
+  font-size: 16px;
+  color: #586069;
+  margin: 5px 0;
+}
+.repo-info-container .description {
+  font-size: 14px;
+  color: #586069;
+  margin-top: 10px;
+}
+.repo-info-container .repo-stats {
+  margin-top: 15px;
+  font-size: 14px;
+  display: flex;
+  gap: 20px;
+}
+.repo-info-container .repo-stats span {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.repo-info-container a {
+  color: #0366d6;
+  text-decoration: none;
+}
+.repo-info-container a:hover {
+  text-decoration: underline;
+}
+.repo-info-container .btn {
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.repo-info-container .btn:hover {
+  background-color: #218838;
+}
+.repo-info-container .repo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
