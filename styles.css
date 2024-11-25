@@ -4,7 +4,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #eaeaea;
+  background-color: white;
   color: #333;
 }
 
@@ -175,10 +175,10 @@ header {
 .publication-thumbnail {
   flex: 0 0 280px; /* Fixed width for thumbnail */
   margin-right: 15px; /* Space between thumbnail and publication details */
-  background-color: whitesmoke; /* Placeholder background color */
+  background-color: white; /* Placeholder background color */
   border-radius: 5px; /* Rounded corners for the placeholder */
-  border: 1px solid #333; /* Add a border around the placeholder */
-  padding: 1px; /* Space between the image and the placeholder's edges */
+  /* border: 1px solid #333; Add a border around the placeholder */
+  /* padding: 1px; Space between the image and the placeholder's edges */
   box-sizing: border-box; /* Ensure padding doesn't increase total size */
 }
 
