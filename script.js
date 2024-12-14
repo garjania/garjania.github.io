@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // Function to create HTML elements to display repo information
 function createRepoInfoElement(data) {
   const repoElement = document.createElement('div');
-  console.log(data);
   
   repoElement.innerHTML = `
     <div class="repo-header">
@@ -76,7 +75,6 @@ document.querySelectorAll('.repo-info-container').forEach(container => {
   // Construct the GitHub API URL
   const apiUrl = `https://api.github.com/repos/${owner}/${repo}`;
 
-  console.log(apiUrl);
   
   // Fetch repository data from GitHub API
   fetch(apiUrl)
