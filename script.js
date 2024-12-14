@@ -106,3 +106,61 @@ document.querySelectorAll('.repo-info-container').forEach(container => {
     });
 });
 
+// The extractStars function (JavaScript code)
+async function extractStars(repoPath, elementId) {
+  const url = `https://img.shields.io/github/stars/${repoPath}?style=for-the-badge&label=&color=fff&labelColor=333`;
+
+  try {
+    // Fetch the SVG content
+    const response = await fetch(url);
+
+    // Check if the response is okay
+    if (!response.ok) {
+      throw new Error('Failed to fetch the SVG');
+    }
+
+    // Get the SVG text
+    const svgText = await response.text();
+
+    // Create a DOM element to parse the SVG content
+    const parser = new DOMParser();
+    const svgDoc = parser.parseFromString(svgText, 'image/svg+xml');
+
+    // Find the text element containing the stars count
+    const textElement = svgDoc.querySelector('text');
+
+    // If the text element exists, update the DOM
+    if (textElement) {
+      const starsCount = textElement.textContent.trim();
+      const starsElement = document.getElementById(elementId);
+      starsElement.textContent = starsCount; // Set the stars count in the span
+    } else {
+      console.log('Text element not found!');
+    }
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+// Function to update stars count for all links
+function updateStars() {
+  const links = document.querySelectorAll('.github-link'); // Get all <a> tags with class 'link-button'
+
+  links.forEach((link, index) => {
+    const href = link.href;
+
+    // Extract the repository path from the URL (after 'github.com/')
+    const repoPath = href.split('github.com/')[1];
+
+    if (repoPath) {
+      const elementId = `starsCount${index}`; // Unique ID for each stars count element
+      link.querySelector('.stars-count').id = elementId; // Set unique ID on the stars count span
+      extractStars(repoPath, elementId);
+    } else {
+      console.log('Invalid GitHub URL');
+    }
+  });
+}
+
+// Call updateStars when the page is loaded
+window.onload = updateStars;

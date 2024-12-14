@@ -315,6 +315,31 @@ header {
   align-items: center;
 }
 
+.link-button {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 2px;
+  padding: 2px 10px;
+  background-color: #fff; /* Dark background */
+  color: #333; /* White text */
+  border: 2px solid #333; /* White border */
+  border-radius: 50px; /* Rounded edges */
+  font-size: 0.9em;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.link-icon {
+  margin-right: 4px; /* Space between icon and text */
+  width: 20px; /* Icon size */
+  height: 20px;
+}
+
+.stars-count {
+  padding-right: 4px;
+}
 
 
 
