@@ -337,8 +337,8 @@ header {
   height: 20px;
 }
 
-.stars-count {
-  padding-right: 4px;
+.star-span {
+  padding-left: 8px;
 }
 
 
