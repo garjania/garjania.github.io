@@ -162,3 +162,22 @@ function updateStars() {
 
 // Call updateStars when the page is loaded
 window.onload = updateStars;
+
+function toggleDropdown(contentId) {
+  const content = document.getElementById(contentId);
+  const button = content.previousElementSibling.querySelector('.dropdown-toggle');
+  const icon = button.querySelector('i');
+  
+  content.classList.toggle('show');
+  if (content.classList.contains('show')) {
+    icon.classList.remove('fa-chevron-right');
+    icon.classList.add('fa-chevron-down');
+    // Add a small delay to allow the content to start expanding
+    setTimeout(() => {
+      content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  } else {
+    icon.classList.remove('fa-chevron-down');
+    icon.classList.add('fa-chevron-right');
+  }
+}
