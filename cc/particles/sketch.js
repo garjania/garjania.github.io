@@ -1,7 +1,7 @@
 // Constants
-const WINDOW_SIZE = 800;
+let WINDOW_SIZE;  // Will be set in setup()
 const FPS = 60;
-const PARTICLE_RADIUS = 5;
+const PARTICLE_RADIUS = 6;
 const MAX_SPEED = 3;
 const ATTRACTION_FORCE = 0.1;
 const REPULSION_FORCE = 1000;
@@ -17,11 +17,14 @@ const TRAIL_LENGTH = 20;  // Number of previous positions to store
 const BLACK = [0, 0, 0];
 const MILKY_WHITE = [248, 246, 240];
 
+// Global variable for interaction state
+let isInteractive = false;
+
 class Particle {
   constructor(x, y, color = BLACK, name = "", maxSpeed = MAX_SPEED,
               attractionForce = ATTRACTION_FORCE, repulsionForce = REPULSION_FORCE,
               epsilon = EPSILON, edgeForce = EDGE_FORCE, alpha = PARTICLE_ALPHA, 
-              trail_alpha_factor = TRAIL_ALPHA_FACTOR, trail_length = TRAIL_LENGTH, mouse_effect=false) {
+              trail_alpha_factor = TRAIL_ALPHA_FACTOR, trail_length = TRAIL_LENGTH) {
     this.x = x;
     this.y = y;
     this.color = color;
@@ -37,7 +40,6 @@ class Particle {
     this.trail = [];  // Array to store previous positions
     this.trail_alpha_factor = trail_alpha_factor;
     this.trail_length = trail_length;
-    this.mouse_effect = mouse_effect;
   }
 
   update(target, repulsion) {
@@ -63,7 +65,7 @@ class Particle {
     let mouseDy = mouseY - this.y;
     let mouseDistance = Math.sqrt(mouseDx * mouseDx + mouseDy * mouseDy);
     
-    if (mouseDistance > 0 && this.mouse_effect) {
+    if (mouseDistance > 0 && isInteractive) {
       // Mouse repulsion force (stronger than regular attraction)
       this.velocityX -= (mouseDx / mouseDistance) * this.repulsionForce * 1/(mouseDistance + this.epsilon);
       this.velocityY -= (mouseDy / mouseDistance) * this.repulsionForce * 1/(mouseDistance + this.epsilon);
@@ -144,7 +146,21 @@ function initializeIndices(offset) {
   return [attIndices, repIndices];
 }
 
+// Function to toggle interaction
+function toggleInteraction() {
+  isInteractive = !isInteractive;
+  const toggleIcon = document.getElementById('toggle-icon');
+  toggleIcon.classList.toggle('active');
+  
+  // Update all particles' mouse effect
+  for (let particle of particles) {
+    particle.mouse_effect = isInteractive;
+  }
+}
+
 function setup() {
+  // Set window size to minimum of browser window dimensions
+  WINDOW_SIZE = min(windowWidth, windowHeight);
   createCanvas(WINDOW_SIZE, WINDOW_SIZE);
   frameRate(FPS);
   
@@ -185,5 +201,18 @@ function draw() {
   // Draw particles
   for (let particle of particles) {
     particle.draw();
+  }
+}
+
+// Add window resize handler
+function windowResized() {
+  WINDOW_SIZE = min(windowWidth, windowHeight);
+  resizeCanvas(WINDOW_SIZE, WINDOW_SIZE);
+  trailGraphics = createGraphics(WINDOW_SIZE, WINDOW_SIZE);
+  
+  // Reposition particles within new bounds
+  for (let particle of particles) {
+    particle.x = random(0, WINDOW_SIZE);
+    particle.y = random(0, WINDOW_SIZE);
   }
 } 
