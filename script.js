@@ -130,13 +130,29 @@ async function extractStars(repoPath, elementId) {
     // If the text element exists, update the DOM
     if (textElement) {
       const starsCount = textElement.textContent.trim();
+      
+      // Validate that starsCount length is not larger than 4
+      if (starsCount.length > 4) {
+        throw new Error('Invalid stars count: Stars count is too large (' + starsCount + ')');
+      }
+      
       const starsElement = document.getElementById(elementId);
       starsElement.textContent = starsCount; // Set the stars count in the span
     } else {
-      console.log('Text element not found!');
+      throw new Error('Could not find stars count text element in the SVG');
     }
   } catch (error) {
     console.error('Error:', error);
+    // Clear the content and remove star icon
+    const starsElement = document.getElementById(elementId);
+    if (starsElement) {
+      starsElement.textContent = '';
+      // Find and remove any sibling with fa-star class
+      const starIcon = starsElement.parentElement.querySelector('.fa-star');
+      if (starIcon) {
+        starIcon.remove();
+      }
+    }
   }
 }
 
