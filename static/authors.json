@@ -1,0 +1,206 @@
+{
+  "authors": [
+    {
+      "id": "ali_garjani",
+      "name": "Ali Garjani",
+      "is_primary": true
+    },
+    {
+      "id": "kunal_pratap_singh",
+      "name": "Kunal Pratap Singh",
+      "webpage": "https://kunalmessi10.github.io",
+      "is_primary": false
+    },
+    {
+      "id": "muhammad_uzair_khattak",
+      "name": "Muhammad Uzair Khattak",
+      "webpage": "https://muzairkhattak.github.io",
+      "is_primary": false
+    },
+    {
+      "id": "rishubh_singh",
+      "name": "Rishubh Singh",
+      "webpage": "https://rishubhsingh.github.io",
+      "is_primary": false
+    },
+    {
+      "id": "jason_toskov",
+      "name": "Jason Toskov",
+      "webpage": "https://people.epfl.ch/jason.toskov/?lang=en",
+      "is_primary": false
+    },
+    {
+      "id": "andrei_atanov",
+      "name": "Andrei Atanov",
+      "webpage": "https://andrewatanov.github.io",
+      "is_primary": false
+    },
+    {
+      "id": "oguzhan_fatih_kar",
+      "name": "Oğuzhan Fatih Kar",
+      "webpage": "https://ofkar.github.io",
+      "is_primary": false
+    },
+    {
+      "id": "amir_zamir",
+      "name": "Amir Zamir",
+      "webpage": "https://vilab.epfl.ch/zamir/",
+      "is_primary": false
+    },
+    {
+      "id": "rahul_ramachandran",
+      "name": "Rahul Ramachandran",
+      "webpage": "https://rahuboy.github.io",
+      "is_primary": false
+    },
+    {
+      "id": "roman_bachmann",
+      "name": "Roman Bachmann",
+      "webpage": "https://roman-bachmann.github.io",
+      "is_primary": false
+    },
+    {
+      "id": "david_mizrahi",
+      "name": "David Mizrahi",
+      "webpage": "https://dmizrahi.com",
+      "is_primary": false
+    },
+    {
+      "id": "mingfei_gao",
+      "name": "Mingfei Gao",
+      "webpage": "https://fly6464.github.io",
+      "is_primary": false
+    },
+    {
+      "id": "david_griffiths",
+      "name": "David Griffiths",
+      "webpage": "https://www.dgriffiths.uk",
+      "is_primary": false
+    },
+    {
+      "id": "jiaming_hu",
+      "name": "Jiaming Hu",
+      "webpage": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.linkedin.com/in/hujiaming&ved=2ahUKEwjxprebw_uOAxWNdUEAHbVPJ8wQFnoECBoQAQ&usg=AOvVaw1PNLwYBnNXAIw51-q5T5zI",
+      "is_primary": false
+    },
+    {
+      "id": "afshin_dehghan",
+      "name": "Afshin Dehghan",
+      "webpage": "https://www.linkedin.com/in/afshin-dehghan-7298ba57/",
+      "is_primary": false
+    },
+    {
+      "id": "nitish_mital",
+      "name": "Nitish Mital",
+      "webpage": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://uk.linkedin.com/in/nitish-mital-phd-89202647&ved=2ahUKEwiHqLerw_uOAxWNUEEAHWDZB68QFnoECBQQAQ&usg=AOvVaw11WKSJp79I51sG-3dsayHo",
+      "is_primary": false
+    },
+    {
+      "id": "ezgi_ozyilkan",
+      "name": "Ezgi Özyılkan",
+      "webpage": "https://ezgimez.github.io",
+      "is_primary": false
+    },
+    {
+      "id": "deniz_gunduz",
+      "name": "Deniz Gündüz",
+      "webpage": "https://www.imperial.ac.uk/people/d.gunduz",
+      "is_primary": false
+    },
+    {
+      "id": "atoosa_malemir_chegini",
+      "name": "Atoosa Malemir Chegini",
+      "is_primary": false
+    },
+    {
+      "id": "mohammadreza_salehi",
+      "name": "Mohammadreza Salehi",
+      "is_primary": false
+    },
+    {
+      "id": "alireza_tabibzadeh",
+      "name": "Alireza Tabibzadeh",
+      "is_primary": false
+    },
+    {
+      "id": "parastoo_yousefi",
+      "name": "Parastoo Yousefi",
+      "is_primary": false
+    },
+    {
+      "id": "mohammad_hossein_razizadeh",
+      "name": "Mohammad Hossein Razizadeh",
+      "is_primary": false
+    },
+    {
+      "id": "moein_esghaei",
+      "name": "Moein Esghaei",
+      "is_primary": false
+    },
+    {
+      "id": "maryam_esghaei",
+      "name": "Maryam Esghaei",
+      "is_primary": false
+    },
+    {
+      "id": "mohammad_hossein_rohban",
+      "name": "Mohammad Hossein Rohban",
+      "is_primary": false
+    },
+    {
+      "id": "emilien_seiler",
+      "name": "Emilien Seiler",
+      "is_primary": false
+    },
+    {
+      "id": "leon_delachaux",
+      "name": "Léon Delachaux",
+      "is_primary": false
+    },
+    {
+      "id": "jennifer_cattaneo",
+      "name": "Jennifer Cattaneo",
+      "is_primary": false
+    },
+    {
+      "id": "thibaud_martin",
+      "name": "Thibaud Martin",
+      "is_primary": false
+    },
+    {
+      "id": "alexia_duriez",
+      "name": "Alexia Duriez",
+      "is_primary": false
+    },
+    {
+      "id": "jeremy_baffou",
+      "name": "Jérémy Baffou",
+      "is_primary": false
+    },
+    {
+      "id": "sepehr_mousavi",
+      "name": "Sepehr Mousavi",
+      "is_primary": false
+    },
+    {
+      "id": "ilenia_meloni",
+      "name": "Ilenia Meloni",
+      "is_primary": false
+    },
+    {
+      "id": "ciara_bergin",
+      "name": "Ciara Bergin",
+      "is_primary": false
+    },
+    {
+      "id": "mattia_tomasoni",
+      "name": "Mattia Tomasoni",
+      "is_primary": false
+    },
+    {
+      "id": "chiara_m_eandi",
+      "name": "Chiara M Eandi",
+      "is_primary": false
+    }
+  ]
+}

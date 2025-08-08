@@ -1,0 +1,178 @@
+{
+  "publications": [
+    {
+      "title": "Multimodality as Supervision: Self-Supervised Specialization to the Test Environment via Multimodality",
+      "author_ids": ["kunal_pratap_singh", "ali_garjani", "muhammad_uzair_khattak", "rishubh_singh", "jason_toskov", "andrei_atanov", "oguzhan_fatih_kar", "amir_zamir"],
+      "equal_contribution": ["kunal_pratap_singh", "ali_garjani"],
+      "conference": "arXiv preprint 2025",
+      "thumbnail": "static/thumbnails/tst-vision.png",
+      "links": [
+        {
+          "type": "website",
+          "url": "https://tst-vision.epfl.ch",
+          "icon": "fa fa-globe",
+          "text": "Website"
+        },
+        {
+          "type": "paper",
+          "url": "https://arxiv.org/abs/2501.00000",
+          "icon": "ai ai-arxiv",
+          "text": "Paper (Coming Soon)"
+        },
+        {
+          "type": "code",
+          "url": "https://github.com/epfl-vilab/tst-vision",
+          "icon": "fab fa-github",
+          "text": "Code (Coming Soon)",
+          "isGithub": true
+        }
+      ]
+    },
+    {
+      "title": "How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation Models on Standard Computer Vision Tasks",
+      "author_ids": ["rahul_ramachandran", "ali_garjani", "roman_bachmann", "andrei_atanov", "oguzhan_fatih_kar", "amir_zamir"],
+      "equal_contribution": ["andrei_atanov", "oguzhan_fatih_kar", "amir_zamir"],
+      "conference": "arXiv preprint 2025",
+      "thumbnail": "static/thumbnails/fm-vision-evals.png",
+      "links": [
+        {
+          "type": "website",
+          "url": "https://fm-vision-evals.epfl.ch",
+          "icon": "fa fa-globe",
+          "text": "Website"
+        },
+        {
+          "type": "paper",
+          "url": "https://arxiv.org/abs/2507.01955",
+          "icon": "ai ai-arxiv",
+          "text": "Paper"
+        },
+        {
+          "type": "code",
+          "url": "https://github.com/epfl-vilab/fm-vision-evals",
+          "icon": "fab fa-github",
+          "text": "Code",
+          "isGithub": true
+        }
+      ]
+    },
+    {
+      "title": "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+      "author_ids": ["roman_bachmann", "oguzhan_fatih_kar", "david_mizrahi", "ali_garjani", "mingfei_gao", "david_griffiths", "jiaming_hu", "afshin_dehghan", "amir_zamir"],
+      "equal_contribution": ["roman_bachmann", "oguzhan_fatih_kar", "david_mizrahi"],
+      "conference": "Neural Informaction Processing Systems (Neurips) 2024",
+      "thumbnail": "static/thumbnails/4M_main_fig_lightmode.png",
+      "links": [
+        {
+          "type": "website",
+          "url": "https://4m.epfl.ch",
+          "icon": "fa fa-globe",
+          "text": "Website"
+        },
+        {
+          "type": "paper",
+          "url": "https://arxiv.org/abs/2406.09406",
+          "icon": "ai ai-arxiv",
+          "text": "Paper"
+        },
+        {
+          "type": "code",
+          "url": "https://github.com/apple/ml-4m",
+          "icon": "fab fa-github",
+          "text": "Code",
+          "isGithub": true
+        },
+        {
+          "type": "demo",
+          "url": "https://huggingface.co/spaces/EPFL-VILAB/4M",
+          "icon": "🤗",
+          "text": "Demo"
+        }
+      ]
+    },
+    {
+      "title": "Neural Distributed Image Compression with Cross-Attention Feature Alignment",
+      "author_ids": ["nitish_mital", "ezgi_ozyilkan", "ali_garjani", "deniz_gunduz"],
+      "equal_contribution": ["nitish_mital", "ezgi_ozyilkan", "ali_garjani"],
+      "conference": "Winter Conference on Applications of Computer Vision (WACV) 2023",
+      "thumbnail": "static/thumbnails/ndic-cam.png",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://openaccess.thecvf.com/content/WACV2023/papers/Mital_Neural_Distributed_Image_Compression_With_Cross-Attention_Feature_Alignment_WACV_2023_paper.pdf",
+          "icon": "ai ai-arxiv",
+          "text": "Paper"
+        },
+        {
+          "type": "code",
+          "url": "https://github.com/ipc-lab/NDIC-CAM",
+          "icon": "fab fa-github",
+          "text": "Code",
+          "isGithub": true
+        }
+      ]
+    },
+    {
+      "title": "Neural Distributed Image Compression Using Common Information",
+      "author_ids": ["nitish_mital", "ezgi_ozyilkan", "ali_garjani", "deniz_gunduz"],
+      "equal_contribution": ["nitish_mital", "ezgi_ozyilkan", "ali_garjani"],
+      "conference": "Data Compression Conference (DCC) 2022",
+      "thumbnail": "static/thumbnails/ndic.png",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://ieeexplore.ieee.org/document/9810729",
+          "icon": "ai ai-arxiv",
+          "text": "Paper"
+        },
+        {
+          "type": "code",
+          "url": "https://github.com/ipc-lab/NDIC",
+          "icon": "fab fa-github",
+          "text": "Code",
+          "isGithub": true
+        },
+        {
+          "type": "video",
+          "url": "https://youtu.be/xtK06jh35Jw",
+          "icon": "fa fa-play",
+          "text": "Video"
+        },
+        {
+          "type": "slides",
+          "url": "https://sigport.org/sites/default/files/docs/DCC_2022_NDIC_Ozyilkan_Garjani_Mital_0.pdf",
+          "icon": "fa fa-file-powerpoint",
+          "text": "Slides"
+        }
+      ]
+    },
+    {
+      "title": "Forecasting Influenza Hemagglutinin Mutations Through the Lens of Anomaly Detection",
+      "author_ids": ["ali_garjani", "atoosa_malemir_chegini", "mohammadreza_salehi", "alireza_tabibzadeh", "parastoo_yousefi", "mohammad_hossein_razizadeh", "moein_esghaei", "maryam_esghaei", "mohammad_hossein_rohban"],
+      "equal_contribution": [],
+      "conference": "Scientific Reports Journal - Nature 2023",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://www.nature.com/articles/s41598-023-42089-y",
+          "icon": "ai ai-arxiv",
+          "text": "Paper"
+        }
+      ]
+    },
+    {
+      "title": "Importance of OCT-derived biomarkers for the recurrence of central serous chorioretinopathy using statistics and predictive modelling",
+      "author_ids": ["emilien_seiler", "leon_delachaux", "jennifer_cattaneo", "ali_garjani", "thibaud_martin", "alexia_duriez", "jeremy_baffou", "sepehr_mousavi", "ilenia_meloni", "ciara_bergin", "mattia_tomasoni", "chiara_m_eandi"],
+      "equal_contribution": [],
+      "conference": "Scientific Reports Journal - Nature 2024",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://www.nature.com/articles/s41598-024-75275-7",
+          "icon": "ai ai-arxiv",
+          "text": "Paper"
+        }
+      ]
+    }
+  ]
+}
