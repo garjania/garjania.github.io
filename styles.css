@@ -196,7 +196,7 @@ header {
 }
 
 .publication-thumbnail {
-  flex: 0 0 280px; /* Fixed width for thumbnail */
+  flex: 0 0 240px; /* Fixed width for thumbnail */
   margin-right: 15px; /* Space between thumbnail and publication details */
   background-color: white; /* Placeholder background color */
   border-radius: 5px; /* Rounded corners for the placeholder */
@@ -253,7 +253,7 @@ header {
 }
 
 .publication-info p {
-  margin-top: 1vh;
+  margin-top: 0.5vh;
 }
 
 .publication-link {
