@@ -1,34 +1,6 @@
 {
   "publications": [
     {
-      "title": "Multimodality as Supervision: Self-Supervised Specialization to the Test Environment via Multimodality",
-      "author_ids": ["kunal_pratap_singh", "ali_garjani", "muhammad_uzair_khattak", "rishubh_singh", "jason_toskov", "andrei_atanov", "oguzhan_fatih_kar", "amir_zamir"],
-      "equal_contribution": ["kunal_pratap_singh", "ali_garjani"],
-      "conference": "arXiv preprint 2025",
-      "thumbnail": "static/thumbnails/tst-vision.png",
-      "links": [
-        {
-          "type": "website",
-          "url": "https://tst-vision.epfl.ch",
-          "icon": "fa fa-globe",
-          "text": "Website"
-        },
-        {
-          "type": "paper",
-          "url": "https://arxiv.org/abs/2501.00000",
-          "icon": "ai ai-arxiv",
-          "text": "Paper (Coming Soon)"
-        },
-        {
-          "type": "code",
-          "url": "https://github.com/epfl-vilab/tst-vision",
-          "icon": "fab fa-github",
-          "text": "Code (Coming Soon)",
-          "isGithub": true
-        }
-      ]
-    },
-    {
       "title": "How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation Models on Standard Computer Vision Tasks",
       "author_ids": ["rahul_ramachandran", "ali_garjani", "roman_bachmann", "andrei_atanov", "oguzhan_fatih_kar", "amir_zamir"],
       "equal_contribution": ["andrei_atanov", "oguzhan_fatih_kar", "amir_zamir"],
